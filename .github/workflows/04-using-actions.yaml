@@ -1,13 +1,17 @@
 name: 04 - Using Actions
 
-on: push
+on: workflow_dispatch
 
 jobs:
     build:
         runs-on: ubuntu-latest
+        
+        #defaults:
+        #    run:
+        #        working-directory: .\temp\code
+        
         steps:
             - name: Checkout Code
               uses: actions/checkout@v4
             - name: Printing Folders
               run: ls
-              
