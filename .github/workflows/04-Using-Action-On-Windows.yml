@@ -1,0 +1,17 @@
+name: 04 - Using Actions - Windows
+
+on: workflow_dispatch
+
+jobs:
+    build:
+        runs-on: windows-latest
+        
+        #defaults:
+        #    run:
+        #        working-directory: .\temp\code
+        
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@v4
+            - name: Printing Folders
+              run: dir
