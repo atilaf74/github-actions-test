@@ -1,4 +1,4 @@
-name: 04 - Using Actions - Windows
+name: 04 - Using Actions - one file
 
 on: workflow_dispatch
 
