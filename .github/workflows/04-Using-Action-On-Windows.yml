@@ -13,10 +13,6 @@ jobs:
         steps:
             - name: Checkout Code
               uses: actions/checkout@v4
-              with:
-                  sparse-checkout: |
-                      novi-file.txt
-                  sparse-checkout-cone-mode: false
             - name: Printing Folders
               run: |
                   dir
